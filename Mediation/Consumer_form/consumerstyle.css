@@ -1,0 +1,79 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+.container1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    max-width: 100%;
+    background-color: #89A894;
+}
+.head1{
+    color: white;
+    transition: 0.8s;
+    transform:  rotate3d(0,0,1, 360deg) ;
+   
+    font-size: 30px;
+}
+
+
+section{
+    height: 60vh;
+    width: 100%;
+}
+
+.container2{
+    border-radius: 7%;
+    margin-top: 5%;
+    margin-left: 30%;
+    margin-right: 30%;
+    background-color:  #e1f0f8;
+    
+}
+
+.head2{
+    font-size: 20px;
+    text-align: center;
+    
+}
+
+.fullname{
+    padding: 3px 50px 3px 50px;
+}
+
+#phonenumber{
+    padding: 3px 30px 3px 30px; 
+}
+
+
+#emailadd{
+
+padding: 3px 30px 3px 30px;
+}
+
+.location{
+    padding: 3px 30px 3px 30px;
+}
+
+.required_time{
+    padding: 3px 30px 3px 30px;
+}
+
+
+#submit{
+    border-radius: 5%;
+    margin-left: 80%;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    background-color: #852626;
+}
+
+#submit:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}

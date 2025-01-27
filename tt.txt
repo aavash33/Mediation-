@@ -1,0 +1,35 @@
+CREATE TABLE serice_provder_table(
+     service_id INT(11) NOT NULL AUTO_INCREMENT,
+    first_name VARCHAR(100) NOT NULL,
+    last_name VARCHAR(100) NOT NULL,
+    business_name LONGTEXT NOT NULL,
+    business_address LONGTEXT NOT NULL,
+    type_of_business VARCHAR(255) NOT NULL,
+    business_description LONGTEXT NOT NULL,
+    service_avalability_time DATETIME  NOT NULL,
+    updated_service_avalability_time DATETIME NOT NULL,
+    created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    PRIMARY KEY(service_id)
+    );
+
+
+    CREATE TABLE consumer( 
+     consumer_id INT(11) NOT NULL AUTO_INCREMENT, 
+    full_name VARCHAR(100) NOT NULL,  
+    phone_number INT NOT NULL, 
+    email_address VARCHART(255) NOT NULL, 
+    desired_service VARCHAR(255) NOT NULL, 
+    consumer_location LONGTEXT NOT NULL, 
+    date_service_required DATETIME  NOT NULL, 
+    updated_date_service_required DATETIME NOT NULL, 
+    created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    service_id INT(11) NOT NULL,
+    FOREIGN KEY (service_id)REFERENCES serice_provder_table(service_id),
+
+    PRIMARY KEY(service_id)
+    );
+    
+
+
+
+
