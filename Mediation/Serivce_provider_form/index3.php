@@ -1,3 +1,29 @@
+<!-- 
+<?php
+$dsn = "mysql:host=localhost;dbname=mediation";
+$dbusername = "root";
+$dbpassword = "";
+
+try {
+   
+    $pdo = new PDO($dsn, $dbusername, $dbpassword);  
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); 
+} 
+catch (PDOException $e) {
+    echo "Connection failed: " . $e->getMessage();
+    exit();
+}
+
+$select_str = "";
+
+// Use PDO for query
+$query = "SELECT * FROM typeofbusiness";
+$stmt = $pdo->query($query); // Execute query
+while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+    $select_str .= "<OPTION VALUE=\"$row[typeofbusiness_id]\" > $row[Nameofthetypeofbusinesses] \n"; 
+}
+?>  -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,13 +33,26 @@
     <title>Document</title>
 </head>
 <body>
+    <nav class="navbar">
+        <ul class="menu">
+            <li><a class="a1" href="../index/home.php" >HOME</a></li>
+            <li><a class="a2" href="../Serivce_provider_form/index3.php" >SERVICE-PROVIDER</a></li>
+            <li><a class="a3" href="../Consumer_form/consumer.php" >CONSUMER</a></li>
+            <li><a class="a4" href="../profile/profile.php" >YOUR PROFILE</a></li>
+        </ul>
+        <div class="menu-wrapper">
+            <span class="ham"></span>
+            <span class="ham"></span>
+            <span class="ham"></span>
+        </div>
+    </nav>
     <header>
         <h1 class="head1"> WELCOME</h1>
-    </header>
+    </header><br><br><br>
     <section>
         <form action="formhandler3.inc.php" method="get" class="form1">
             <div class="container1">
-            </div>
+            
             <div class="container2">
             <table class="table1" cellspacing="30px">
                     <h2 class="head2">Enter Your Details Below</h2>
@@ -41,16 +80,17 @@
             
             <tr>
                 <td>
-                    <select name="type_of_business" id="businesstype">
-                        <option value="">Selecy An Option</option>
-                        <option value="Groomer">GROOMER</option>
-                        <option value="Hair_Dresser">Hair Dresser</option>
-                        <option value="Mower">Lawn Mower</option>
-                    </select>
+
+                <p>Select the desired Service:</p>
+                            <!-- Dropdown for services -->
+                            <select name="type_of_business" id="type_of_business" required>
+                                <?php echo $select_str; ?>
+                            </select>
+               
                 </td>
             </tr>
 
-
+                
             <tr>
                 <td>
                     <textarea name="business_description" id="description" placeholder="Enter Your Business/Serice Description Here."></textarea>
@@ -76,7 +116,7 @@
 
             </div>
 
-
+            </div>
 
 
 
@@ -84,7 +124,8 @@
 
             
 
-        </form>
+        </form>  <br><br><br><br>
     </section>
+  
 </body>
 </html>

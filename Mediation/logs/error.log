@@ -1,0 +1,4 @@
+[05-Mar-2025 07:22:34 Europe/Berlin] Mailer Error: SMTP Error: Could not authenticate.
+[05-Mar-2025 07:27:05 Europe/Berlin] Database Error: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'aavashbro444@gmail.com' for key 'emailaddress'
+[05-Mar-2025 07:31:57 Europe/Berlin] Mailer Error: SMTP Error: Could not authenticate.
+[05-Mar-2025 07:46:35 Europe/Berlin] Mailer Error: SMTP Error: Could not authenticate.

@@ -44,17 +44,20 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
 
         $service_id = $pdo->lastInsertId();
 
-
+        $query2 = "INSERT INTO availabletime(service_id, available_time) VALUES (?, ?)";
+        $stmt2 = $pdo->prepare($query2);
+        $stmt2->execute([$service_id, $service_avalability_time]);
+      
         echo "<h4>Service ID: " . htmlspecialchars($service_id) . "</h4>";
 
         $pdo = null;
         $stmt = null;
-      
+        $stmt2 = null;
 
     } catch (PDOException $e) {
         echo "Error: " . $e->getMessage();
     }
 }
 else{
-    header("Location: ../index.php");
+    header("Location: ../index/home.php");
 }
