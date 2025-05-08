@@ -1,0 +1,535 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    
+}
+/* NAVBAR CONTENTS */
+.navbar {
+    line-height: 200%;
+    background-color: #852626;
+    display: flex;
+  
+    
+    
+}
+.menu {
+    margin-left: 10%;
+    line-height: 300%;
+    display: flex;
+    list-style: none;
+    gap: 200px; /* Add some space between menu items */
+}
+
+li:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+ a:hover{
+    color: antiquewhite;
+    
+ }
+a {
+    color: white;
+    text-decoration: none;
+    padding: 20px 25px; /* Add some padding to the links */
+    transition: background-color 0.3s ease-in-out;
+}
+
+
+.menu-wrapper {
+    display: none;
+    cursor: pointer;
+    
+   
+}
+
+.ham {
+    
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background-color: aliceblue;
+}
+
+/* BODY CONTENTS */
+header{
+     display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30vh;
+background-color:#89A894;
+}
+.head1{
+    transition: 0.8s;
+    transform: rotate3d(0,1,0, 360deg) ;
+   
+    font-size: 40px;
+    color: white;
+}
+
+section{
+    
+    height: 60vh;
+    margin-bottom: 2%;
+}
+
+
+
+
+
+.container2{
+    margin-left: 20%;
+    background-color:#E8F2F8 ;
+    margin-right: 20%;
+    border-radius: 10%;
+}
+
+
+.table1{
+    background-color:#E8F2F8 ;
+    border-radius: 20%;
+    margin-top: 0;
+    margin-left: 0%
+}
+.head2{
+    text-align: center;
+    color: rgb(97, 95, 95);
+}
+
+.input1{
+    background-color:#E8F2F8 ;
+padding: 5px;
+border-radius: 7%;
+}
+.input2{
+    background-color:#E8F2F8 ;
+    padding: 5px;
+    border-radius: 7%;
+    }
+
+
+ .email{
+    background-color:#E8F2F8 ;
+    padding: 5px;
+    border-radius: 7%;
+ }   
+    
+.businessname{
+    background-color:#E8F2F8 ;
+    padding: 5px;
+    padding-right: 300px;
+    border-radius: 7%;
+}
+.business_location{
+    background-color:#E8F2F8 ;
+    padding: 5px;
+    padding-right: 350px;
+    border-radius: 7%;
+}
+
+#businesstype{
+    background-color:#E8F2F8 ;
+    padding: 5px;
+    border-radius: 7%;
+    
+}
+
+#description{
+    background-color:#E8F2F8 ;
+    padding-right: 350px;
+    padding-bottom: 100px;
+}
+
+#servicetime{
+    background-color:#E8F2F8 ;
+    padding: 5px;
+    border-radius: 7%;
+}
+
+#submit{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    background-color: #852626;
+}
+
+#submit:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.Update{
+    margin-left: 10%;
+    text-decoration: none;
+    text-align: center;
+}
+
+
+select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+select#type_of_business {
+    
+    width: 100%;  /* Makes the dropdown take full width */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+}
+@media(max-width: 1355px){
+
+    /* NAVBAR CONTENTS */
+
+.menu {
+    margin-left: 5%;
+    line-height: 300%;
+    display: flex;
+    list-style: none;
+    gap: 200px; /* Add some space between menu items */
+}
+
+
+
+
+}
+
+@media(max-width: 1285px){
+
+    /* NAVBAR CONTENTS */
+
+.menu {
+    margin-left: 0%;
+    line-height: 300%;
+    display: flex;
+    list-style: none;
+    gap: 150px; /* Add some space between menu items */
+}
+
+
+}
+
+
+@media(max-width: 1070px){
+
+    /* NAVBAR CONTENTS */
+
+.menu {
+    margin-left: 0%;
+    line-height: 300%;
+    display: flex;
+    list-style: none;
+    gap: 100px; /* Add some space between menu items */
+}
+
+
+}
+
+@media(max-width: 990px){
+
+    /* NAVBAR CONTENTS */
+
+.menu {
+    margin-left: 0%;
+    line-height: 300%;
+    display: flex;
+    list-style: none;
+    gap: 50px; /* Add some space between menu items */
+}
+
+.container2{
+    margin-left: 0%;
+    background-color:#E8F2F8 ;
+    margin-right: 20%;
+    border-radius: 10%;
+}
+
+}
+
+@media(max-width: 775px){
+
+    /* NAVBAR CONTENTS */
+
+
+    
+.menu {
+    margin-left: 0%;
+    line-height: 300%;
+    display: flex;
+    list-style: none;
+    gap: 10px; /* Add some space between menu items */
+}
+
+.container2{
+    border-radius: 2%;
+    margin: 0%;
+    background-color: #F7FCFF;
+}
+
+
+.table1{
+    
+    border-radius: 10%;
+    margin-top: 0;
+    margin-left: 0%
+}
+}
+
+@media(max-width: 650px){
+
+    /* NAVBAR CONTENTS */
+    .navbar{
+        overflow: hidden;
+        position: fixed;
+       max-width:100%;
+    }
+
+.menu {
+    margin-left: 0%;
+    line-height: 300%;
+    display: flex;
+    list-style: none;
+    gap: 10px; /* Add some space between menu items */
+}
+
+header{
+    display: flex;
+   align-items: flex-end;
+   justify-content: bottom;
+   height: 30vh;
+background-color:#89A894;
+}
+
+.head1{
+    margin-bottom: 2%;
+    transition: 0.8s;
+    transform: rotate3d(0,1,0, 360deg) ;
+   
+    font-size: 30px;
+    color: white;
+}
+
+.menu {
+    opacity: 0;
+    position: fixed;
+    left: -100%;
+    top: 0px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #852626;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    
+}
+.menu-wrapper {
+    display: block;
+    color: #852626;
+}
+
+.menu-wrapper.active .ham:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-wrapper.active .ham:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.menu-wrapper.active .ham:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+.menu.active {
+    opacity: 1;
+    left: 0;
+}
+
+
+.L {
+    margin: 15px 0;
+}
+
+.footer{
+    background-color: whitesmoke;
+}
+}
+
+
+@media(max-width: 570px){
+
+
+ 
+    .container2{
+        border-radius: 2%;
+        margin: 0%;
+        background-color: #F7FCFF;
+    }
+    
+   
+    
+    .head2{
+        text-align: left;
+        color: rgb(97, 95, 95);
+    }
+
+
+    .table1{
+        background-color:#E8F2F8 ;
+        border-radius: 1%;
+       
+        margin-left: 0%
+    }
+
+
+    .input1{
+        background-color:#E8F2F8 ;
+        margin-left: 0%;
+    padding: 5px;
+    border-radius: 5%;
+    }
+    .input2{
+        margin-left: 0%;
+        background-color:#E8F2F8 ;
+        padding: 5px;
+        border-radius: 5%;
+        }
+        
+        .email{
+            margin-left: 0%;
+            background-color:#E8F2F8 ;
+            padding: 5px;
+            border-radius: 5%;
+        }
+
+    .businessname{
+        background-color:#E8F2F8 ;
+        padding: 5px;
+        padding-right: 150px;
+        border-radius: 7%;
+    }
+    .business_location{
+        background-color:#E8F2F8 ;
+        padding: 5px;
+        padding-right: 150px;
+        border-radius: 7%;
+    }
+    
+    #businesstype{
+        background-color:#E8F2F8 ;
+        padding: 5px;
+        border-radius: 7%;
+        
+    }
+    
+    #description{
+        background-color:#E8F2F8 ;
+        padding-right: 100px;
+        padding-bottom: 100px;
+        margin-left: 0%;
+    }
+    
+    #servicetime{
+        background-color:#E8F2F8 ;
+        padding: 5px;
+        border-radius: 7%;
+    }
+
+
+
+
+}
+
+
+
+@media(max-width: 370px){
+
+
+ 
+    .container2{
+        border-radius: 2%;
+        margin: 0%;
+        background-color: #F7FCFF;
+    }
+    
+   
+    
+    .head2{
+        text-align: left;
+        color: rgb(97, 95, 95);
+    }
+
+
+    .table1{
+        background-color:#E8F2F8 ;
+        border-radius: 1%;
+       
+        margin-left: 0%
+    }
+
+
+    .input1{
+        background-color:#E8F2F8 ;
+        margin-left: 0%;
+    padding-right: 5px;
+    border-radius: 5%;
+    }
+    .input2{
+        margin-left: 0%;
+        background-color:#E8F2F8 ;
+        padding: 5px;
+        border-radius: 5%;
+        }
+
+        .email{
+            margin-left: 0%;
+            background-color:#E8F2F8 ;
+            padding: 5px;
+            border-radius: 5%;
+        }
+        
+    .businessname{
+        background-color:#E8F2F8 ;
+        padding: 5px;
+        padding-right: 80px;
+        border-radius: 7%;
+    }
+    .business_location{
+        background-color:#E8F2F8 ;
+        padding: 5px;
+        padding-right: 80px;
+        border-radius: 7%;
+    }
+    
+    #businesstype{
+        background-color:#E8F2F8 ;
+        padding: 5px;
+        border-radius: 7%;
+        padding-right: 50px;
+        
+    }
+    
+    #description{
+        background-color:#E8F2F8 ;
+        padding-right: 50px;
+        padding-bottom: 100px;
+        margin-left: 0%;
+    }
+    
+    #servicetime{
+        background-color:#E8F2F8 ;
+        padding: 5px;
+        border-radius: 7%;
+    }
+
+
+
+
+}

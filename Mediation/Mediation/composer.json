@@ -1,0 +1,11 @@
+{
+    "name": "mediation/app",
+    "require": {
+        "phpmailer/phpmailer": "^6.8"
+    },
+    "config": {
+        "secure-http": false,
+        "disable-tls": true,
+        "platform-check": false
+    }
+}
